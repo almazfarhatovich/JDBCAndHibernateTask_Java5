@@ -1,7 +1,6 @@
 package peaksoft.dao;
 
 import peaksoft.model.User;
-
 import java.util.List;
 
 public interface UserDao {
@@ -17,4 +16,6 @@ public interface UserDao {
     List<User> getAllUsers();
 
     void cleanUsersTable();
+
+    boolean existsByFirstName(String firstName);
 }
